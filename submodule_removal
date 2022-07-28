@@ -1,0 +1,6 @@
+submodule@example:~$ git rm submarines
+submodule@example:~$ rm -rf .git/modules/submarines
+submodule@example:~$ git config -f .git/config --remove-section submodule.submarine 2> /dev/null
+submodule@example:~$ git add .
+submodule@example:~$ git commit -m "git remove submodule example complete"
+submodule@example:~$ git push origin
